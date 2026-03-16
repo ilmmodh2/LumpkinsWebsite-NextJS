@@ -6,6 +6,7 @@ import { ScrollReveal } from "@/components/scroll-reveal"
 import {
   Car, Home, Heart, Waves, Building2, Briefcase, Package, HardHat,
   Phone, Mail, MapPin, Clock, Star, CheckCircle, Shield, Users, Award,
+  type LucideIcon,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -460,7 +461,7 @@ export default function LumpkinsPage() {
 
 /* ─── Service Card (3-D flip) ───────────────────────── */
 interface ServiceCardProps {
-  icon: React.ComponentType<{ className?: string; "aria-hidden"?: string }>
+  icon: LucideIcon
   title: string
   desc: string
   bullets: string[]
